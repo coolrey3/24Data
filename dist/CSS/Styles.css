@@ -1,0 +1,128 @@
+/************  DEFAULTS  *****************/
+
+/* html {
+    font-family: ;
+} */
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    margin: 0;
+    color: white;
+
+}
+
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    margin:0;
+}
+
+.row div {
+    padding: 0;
+}
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1496D3;
+}
+
+
+/**************  NAV BAR  ***********/
+nav {
+    background-color: #045487;
+    color: white;
+    border-bottom:  2px solid white;
+    font-size: 1.2rem; 
+}
+
+/**************  NAV BAR  ***********/
+
+
+img.desktop {
+    display:block;
+    margin: auto;
+    width: auto;
+    max-height: 450px;
+}
+
+.top , .mid{
+    /* height: 50px; */
+    padding: 100px;
+}
+
+.form {
+    margin:auto;
+    width:100%;
+    text-align: center;
+    color: white;
+}
+
+.form input {
+    min-width: 300px;
+    margin: 10px 0;
+    border-radius: 5px
+}
+
+/* ***************  Forms ******************** */
+
+.formGroup {
+    display: inline;
+    max-width: ;
+}
+.formBtn {
+    min-width: 50px;
+}
+
+
+.mid h1 {
+
+    text-align: center;
+    
+}
+
+.mid img {
+    width: 100%;
+    margin: auto;
+}
