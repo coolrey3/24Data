@@ -84,12 +84,12 @@ img.desktop {
     display:block;
     margin: auto;
     width: auto;
-    max-height: 450px;
+    max-height: 650px;
 }
 
 .top , .mid{
     /* height: 50px; */
-    padding: 100px;
+    padding: 20px 100px;
 }
 
 .form {
@@ -115,6 +115,11 @@ img.desktop {
     min-width: 50px;
 }
 
+.mid p  {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
 
 .mid h1 {
 
@@ -124,5 +129,6 @@ img.desktop {
 
 .mid img {
     width: 100%;
+    max-width: 300px
     margin: auto;
 }
