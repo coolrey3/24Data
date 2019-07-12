@@ -91,7 +91,9 @@ a.nav-link {
 
 
 /**************** ROWS*****************/
-
+.row.top {
+    padding-top:100px;
+}
 
 .top , .mid {
     /* height: 50px; */
