@@ -1,3 +1,74 @@
+.hidden {
+  display: none; }
+
+.shown {
+  display: unset; }
+
+/* ***************  Form Container  ******************** */
+.formGroup {
+  display: inline; }
+
+.formBtn {
+  min-width: 50px; }
+
+.form {
+  width: 400px;
+  text-align: center;
+  color: white;
+  margin: auto; }
+
+.form input {
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 100%; }
+
+.formGroup {
+  display: block; }
+
+.formContainer {
+  width: 600px; }
+
+.formBox {
+  margin: auto; }
+
+label {
+  font-size: 12px;
+  text-align: left; }
+
+input.half {
+  width: 90%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.checkBox {
+  border: solid 1px black; }
+
+input.btn {
+  width: 115px;
+  padding: 1px 5px;
+  color: #FFF;
+  background-color: #6CB9E3; }
+
+li.nav-item {
+  color: white; }
+
+div.mainText {
+  word-spacing: 6px; }
+
+.upperCase {
+  font-size: 50px; }
+
+img.desktop {
+  margin: auto;
+  width: 100%;
+  max-height: 650px; }
+
+/*# sourceMappingURL=main.css.map */
+
 /************  DEFAULTS  *****************/
 
 /* html {
@@ -64,7 +135,7 @@ body {
     box-sizing: border-box;
 }
 
-body {
+body.landingPage {
     background-color: #1496D3;
 }
 
@@ -74,46 +145,21 @@ nav {
     background-color: #045487;
     color: white;
     border-bottom:  2px solid white;
-    font-size: 1.2rem; 
+    font-size: 1.6rem; 
+    text-transform: uppercase
 }
 
-/**************  NAV BAR  ***********/
 
 
-img.desktop {
-    display:block;
-    margin: auto;
-    width: auto;
-    max-height: 650px;
-}
 
-.top , .mid{
+/**************** ROWS*****************/
+
+
+.top , .mid {
     /* height: 50px; */
     padding: 20px 100px;
 }
 
-.form {
-    margin:auto;
-    width:100%;
-    text-align: center;
-    color: white;
-}
-
-.form input {
-    min-width: 300px;
-    margin: 10px 0;
-    border-radius: 5px
-}
-
-/* ***************  Forms ******************** */
-
-.formGroup {
-    display: inline;
-    max-width: ;
-}
-.formBtn {
-    min-width: 50px;
-}
 
 .mid p  {
     font-size: 1.8rem;
@@ -132,3 +178,11 @@ img.desktop {
     max-width: 300px
     margin: auto;
 }
+
+
+@media screen and (max-width:680px) {
+    
+
+
+    
+    }
