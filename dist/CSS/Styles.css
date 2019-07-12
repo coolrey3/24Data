@@ -12,7 +12,6 @@
   min-width: 50px; }
 
 .form {
-  width: 400px;
   text-align: center;
   color: white;
   margin: auto; }
@@ -29,6 +28,12 @@
   width: 600px; }
 
 .formBox {
+  margin: auto; }
+
+form {
+  max-width: 70%;
+  text-align: center;
+  min-width: 300px;
   margin: auto; }
 
 label {
@@ -59,13 +64,34 @@ li.nav-item {
 div.mainText {
   word-spacing: 6px; }
 
+.mainText h1 {
+  text-transform: uppercase; }
+
 .upperCase {
   font-size: 50px; }
 
 img.desktop {
+  width: 85%;
   margin: auto;
-  width: 100%;
   max-height: 650px; }
+
+h1.sideTitle {
+  text-align: left; }
+
+.side li {
+  font-size: 1em; }
+
+.side ol {
+  padding-left: 22px; }
+
+.side.hidden img {
+  display: none; }
+
+.TitleText h1 {
+  text-align: center; }
+
+.mobileTitleText h1 {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
 
@@ -110,7 +136,7 @@ body {
 }
 
 .row div {
-    padding: 0;
+    /* padding: 0; */
 }
 .row::after {
     display: table;
@@ -152,6 +178,7 @@ nav {
 
 
 
+
 /**************** ROWS*****************/
 
 
@@ -162,27 +189,94 @@ nav {
 
 
 .mid p  {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 1.6em;
+    /* font-weight: 600; */
+    padding: 5px 5%;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    
 
 }
 
-.mid h1 {
+.mid .mainText h1 {
 
     text-align: center;
+    margin-bottom: 15px;
     
 }
 
 .mid img {
     width: 100%;
-    max-width: 300px
+    max-width: 600px
     margin: auto;
 }
 
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:768px) {
+    
+    .top, .mid {
+        padding: 0;
+        /* width: 50%; */
+        }
+
+    button.navbar-toggler.hamburger {
+
+        text-align: left;
+    }
+
+    img.desktop  {
+        display: none;
+    }
     
 
-
+    .mid p  {
+        font-size: .8em;
+        font-weight: 600;
     
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .thirdP {
+        display: none
+    }
+
+    form input.half {
+        width: 100%;
+        float:none
+    }
+
+    form input {
+        /* max-width:66%; */
+    }       
+
+    .mainText {
+        /* padding: 30px; */
+    }
+
+    img .phone  {
+        display: none
+    }
+
+    .side.shown {
+        display: none
+    }
+
+    .formGroup {
+        min-width: 45px;
+        display: inline-block;
+        float: left;
+    }
+    .hidden {
+        display:unset;
+    }
+    .hidden img {
+        width: 100%
+    }
+
+    .mainTitleText {
+        display: none;
+    }
     }

@@ -1,6 +1,68 @@
-@media screen and (max-width:680px) {
+@media screen and (max-width:768px) {
+    
+    .top, .mid {
+        padding: 0;
+        /* width: 50%; */
+        }
+
+    button.navbar-toggler.hamburger {
+
+        text-align: left;
+    }
+
+    img.desktop  {
+        display: none;
+    }
     
 
-
+    .mid p  {
+        font-size: .8em;
+        font-weight: 600;
     
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .thirdP {
+        display: none
+    }
+
+    form input.half {
+        width: 100%;
+        float:none
+    }
+
+    form input {
+        /* max-width:66%; */
+    }       
+
+    .mainText {
+        /* padding: 30px; */
+    }
+
+    img .phone  {
+        display: none
+    }
+
+    .side.shown {
+        display: none
+    }
+
+    .formGroup {
+        min-width: 45px;
+        display: inline-block;
+        float: left;
+    }
+    .hidden {
+        display:unset;
+    }
+    .hidden img {
+        width: 100%
+    }
+
+    .mainTitleText {
+        display: none;
+    }
     }

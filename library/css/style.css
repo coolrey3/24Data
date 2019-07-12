@@ -39,7 +39,7 @@ body {
 }
 
 .row div {
-    padding: 0;
+    /* padding: 0; */
 }
 .row::after {
     display: table;
@@ -81,6 +81,7 @@ nav {
 
 
 
+
 /**************** ROWS*****************/
 
 
@@ -91,20 +92,25 @@ nav {
 
 
 .mid p  {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 1.6em;
+    /* font-weight: 600; */
+    padding: 5px 5%;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    
 
 }
 
-.mid h1 {
+.mid .mainText h1 {
 
     text-align: center;
+    margin-bottom: 15px;
     
 }
 
 .mid img {
     width: 100%;
-    max-width: 300px
+    max-width: 600px
     margin: auto;
 }
 

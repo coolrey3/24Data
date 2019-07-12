@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bluebg">
             <a class="navbar-brand" href="#">SKILL TEST</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,10 +44,13 @@
         <div class="row top">
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-6 ">
+                    <div class="col-md-6 ">
                         <img class="desktop" src="/library/img/DT-cropped.png" alt="desktop">
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-2 hidden">
+                        <img src="/library/img/phone.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-10">
                         <div class="form">
                             <container class="formContainer">
                                 <h1>Fill Out This Form</h1>
@@ -74,11 +77,11 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-sm-6">
+                                        <div class="col-md-6 col-sm-12">
                                             <input id="Phone" class="half left" type="number"
                                                 placeholder="    Phone Number">
                                         </div>
-                                        <div class="col-sm-6 formBox">
+                                        <div class="col-md-6 col-sm-12 formBox">
                                             <input id="Zip" class="half right" type="number" placeholder="    Zip Code">
                                         </div>
                                     </div>
@@ -124,9 +127,13 @@
 
         <div class="row mid">
             <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-9 mainText">
-                        <h1><span class="upperCase">M</span>AIN <span class="upperCase">B</span>ODY <span class="upperCase">T</span>EXT</h1>
+                <div class='mobile'>
+
+                </div>
+                <div class="row mid">
+                    <div class="col-sm-12 col-md-9 mainText">
+                        <h1 class="mainTitleText "><span class="upperCase">M</span>AIN <span class="upperCase">B</span>ODY <span class="upperCase">T</span>EXT</h1>
+                        <h1 class="mobileTitleText TitleText hidden"><span class="upperCase">m</span>obile <span class="upperCase">m</span>ain <span class="upperCase">t</span>ext</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                             ut labore et dolore magna aliqua. Eu volutpat odio fascilisis mauris sit amet massa citae.
@@ -144,7 +151,7 @@
                             elementum curabitur vitae nunc sed.
                     
                         </p><br>
-                        <p>
+                        <p class="thirdP">
                             Dolor morbi non arcu risus quis varius quam quisque. Ut Faucibus
                             pulvinar elementum integer enim neque volutpat ac tincidunt.
                             Adipscing diam donec adipiscing tristique risus nec. Tempor orci
@@ -155,8 +162,8 @@
                             amet nisl suscipit.
                         </p>
                     </div>
-                    <div class="col-sm-3 shown">
-                        <img src="/library/img/phone.png" alt="phone">
+                    <div class="col-sm-3 side shown">
+                        <img class="phone" src="/library/img/phone.png" alt="phone">
                         <h1>Desktop Side Area</h1>
                         <ol>
                             <li>Lorem ipsum dolor sit amet</li>
@@ -168,9 +175,9 @@
                         </ol>
                     </div>
 
-                    <div class="col-sm-3 hidden">
-                        <img src="/library/img/phone.png" alt="phone">
-                        <h1>Mobile Side Area</h1>
+                    <div class="col-sm-12 col-md-3 side hidden TitleText">
+                        <img class="phone" src="/library/img/phone.png" alt="phone">
+                        <h1 class="sideTitle">Mobile Side Area</h1>
                         <ol>
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetir adipliscing elit</li>

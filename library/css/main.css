@@ -12,7 +12,6 @@
   min-width: 50px; }
 
 .form {
-  width: 400px;
   text-align: center;
   color: white;
   margin: auto; }
@@ -29,6 +28,12 @@
   width: 600px; }
 
 .formBox {
+  margin: auto; }
+
+form {
+  max-width: 70%;
+  text-align: center;
+  min-width: 300px;
   margin: auto; }
 
 label {
@@ -59,12 +64,33 @@ li.nav-item {
 div.mainText {
   word-spacing: 6px; }
 
+.mainText h1 {
+  text-transform: uppercase; }
+
 .upperCase {
   font-size: 50px; }
 
 img.desktop {
+  width: 85%;
   margin: auto;
-  width: 100%;
   max-height: 650px; }
+
+h1.sideTitle {
+  text-align: left; }
+
+.side li {
+  font-size: 1em; }
+
+.side ol {
+  padding-left: 22px; }
+
+.side.hidden img {
+  display: none; }
+
+.TitleText h1 {
+  text-align: center; }
+
+.mobileTitleText h1 {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
