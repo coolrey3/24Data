@@ -65,8 +65,8 @@
                         <div class="form">
                             <container class="formContainer">
                                 <h1>Fill Out This Form</h1>
-                                <form>
-                                    <div class="row">
+                                <form action="" method="post" onsubmit="return FormValidation();" onchange="return FormValidation();">
+                                        <div class="row">
                                         <div class="col-sm-12">
 
                                             <input id="FirstName" class="full" type="text" placeholder="    First Name">
@@ -113,7 +113,10 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <input id="Btn" class="btn" class="formBtn" type="submit">
+                                                <!-- <a href="#" onclick="FormValidation()"> -->
+                                                        
+                                                        <input id="Btn" class="btn" class="formBtn" type="submit">
+                                                    <!-- </a> -->
                                         </div>
 
                                     </div>
