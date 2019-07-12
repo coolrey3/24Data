@@ -1,24 +1,25 @@
 @media screen and (max-width:768px) {
-    
-    .top, .mid {
+
+    .top,
+    .mid {
         padding: 0;
         /* width: 50%; */
-        }
+    }
 
     button.navbar-toggler.hamburger {
 
         text-align: left;
     }
 
-    img.desktop  {
+    img.desktop {
         display: none;
     }
-    
 
-    .mid p  {
+
+    .mid p {
         font-size: .8em;
         font-weight: 600;
-    
+
     }
 
     form {
@@ -31,18 +32,18 @@
 
     form input.half {
         width: 100%;
-        float:none
+        float: none
     }
 
     form input {
         /* max-width:66%; */
-    }       
+    }
 
     .mainText {
         /* padding: 30px; */
     }
 
-    img .phone  {
+    img .phone {
         display: none
     }
 
@@ -55,9 +56,11 @@
         display: inline-block;
         float: left;
     }
+
     .hidden {
-        display:unset;
+        display: unset;
     }
+
     .hidden img {
         width: 100%
     }
@@ -65,4 +68,14 @@
     .mainTitleText {
         display: none;
     }
+
+    .row.mid {
+        flex-direction: row-reverse;
     }
+
+    .mobileTitleText {
+        display: block;
+    }
+
+
+}

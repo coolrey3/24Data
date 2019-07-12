@@ -50,7 +50,8 @@ input.half {
   float: right; }
 
 .checkBox {
-  border: solid 1px black; }
+  border: solid 1px black;
+  float: left; }
 
 input.btn {
   width: 115px;

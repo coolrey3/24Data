@@ -50,7 +50,8 @@ input.half {
   float: right; }
 
 .checkBox {
-  border: solid 1px black; }
+  border: solid 1px black;
+  float: left; }
 
 input.btn {
   width: 115px;
@@ -184,7 +185,7 @@ nav {
 
 .top , .mid {
     /* height: 50px; */
-    padding: 20px 100px;
+    padding: 20px 3%;
 }
 
 
@@ -213,26 +214,27 @@ nav {
 
 
 @media screen and (max-width:768px) {
-    
-    .top, .mid {
+
+    .top,
+    .mid {
         padding: 0;
         /* width: 50%; */
-        }
+    }
 
     button.navbar-toggler.hamburger {
 
         text-align: left;
     }
 
-    img.desktop  {
+    img.desktop {
         display: none;
     }
-    
 
-    .mid p  {
+
+    .mid p {
         font-size: .8em;
         font-weight: 600;
-    
+
     }
 
     form {
@@ -245,18 +247,18 @@ nav {
 
     form input.half {
         width: 100%;
-        float:none
+        float: none
     }
 
     form input {
         /* max-width:66%; */
-    }       
+    }
 
     .mainText {
         /* padding: 30px; */
     }
 
-    img .phone  {
+    img .phone {
         display: none
     }
 
@@ -269,9 +271,11 @@ nav {
         display: inline-block;
         float: left;
     }
+
     .hidden {
-        display:unset;
+        display: unset;
     }
+
     .hidden img {
         width: 100%
     }
@@ -279,4 +283,14 @@ nav {
     .mainTitleText {
         display: none;
     }
+
+    .row.mid {
+        flex-direction: row-reverse;
     }
+
+    .mobileTitleText {
+        display: block;
+    }
+
+
+}
