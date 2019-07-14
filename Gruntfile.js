@@ -1,4 +1,4 @@
-const mozjpeg = require('imagemin-mozjpeg');
+// const mozjpeg = require('imagemin-mozjpeg');
 
 module.exports = function (grunt) {
 
@@ -39,28 +39,16 @@ module.exports = function (grunt) {
     },
 
     imagemin: {
-      static: {
-          options: {
-              optimizationLevel: 3,
-              svgoPlugins: [{removeViewBox: false}],
-              use: [mozjpeg()] // Example plugin usage
-          },
-          files: {
-              'dist/images/cropped_phone1_minified.png': 'library/img/cropped_phone1.png',
-              'dist/images/DT-cropped_min.png': 'library/img/DT-cropped.png',
-              // 'dist/img.gif': 'library/img/img.gif'
-          }
-      },
-
 
       dynamic: {
           files: [{
               expand: true,
-              cwd: '/library/img/',
+              cwd: 'library/img',
               src: ['**/*.{png,jpg,gif}'],
-              dest: 'dist/images/'
+              dest: 'dist/images'
           }]
       }
+
   },
 
   cssmin: {
