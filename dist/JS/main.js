@@ -2,23 +2,24 @@
 function FormValidation() {
 
 //First Name Validation 
-    var fn=document.getElementById('FirstName').value;
-    if(fn == ""){
-        alert('Please Enter First Name');
+    var validate=document.getElementById('FirstName').value;
+    if(validate == ""){
         document.getElementById('FirstName').style.borderColor = "red";
+        document.getElementById('FormAlert').innerHTML = 'Please Enter Your First Name!';
         return false;
     }else{
         document.getElementById('FirstName').style.borderColor = "green";
+        document.getElementById('FormAlert').innerHTML = '';
     }
     if (/^[0-9]+$/.test(document.getElementById("FirstName").value)) {
-        alert("First Name Contains Numbers!");
+        document.getElementById('FormAlert').innerHTML = 'Your first name should not contain numbers!';
         document.getElementById('FirstName').style.borderColor = "red";
         return false;
     }else{
         document.getElementById('FirstName').style.borderColor = "green";
     }
-    if(fn.length > 20){
-        alert('Your First Name is too long');
+    if(validate.length > 20){
+        document.getElementById('FormAlert').innerHTML = 'Your First name is too long!';
         document.getElementById('FirstName').style.borderColor = "red";
         return false;
     }else{
@@ -27,10 +28,10 @@ function FormValidation() {
 
 
     //Last Name Validation 
-    var fn=document.getElementById('LastName').value;
-    if(fn == ""){
-        alert('Please Enter Last Name');
+    var validate=document.getElementById('LastName').value;
+    if(validate == ""){
         document.getElementById('LastName').style.borderColor = "red";
+        document.getElementById('FormAlert').innerHTML = 'Please Enter Your Last Name!';
         return false;
     }else{
         document.getElementById('LastName').style.borderColor = "green";
@@ -42,7 +43,7 @@ function FormValidation() {
     }else{
         document.getElementById('LastName').style.borderColor = "green";
     }
-    if(fn.length > 20){
+    if(validate.length > 20){
         alert('Your Last Name is too long');
         document.getElementById('LastName').style.borderColor = "red";
         return false;
@@ -51,40 +52,52 @@ function FormValidation() {
     }
 
     //Email Validation 
-    var fn=document.getElementById('Email').value;
-    if(fn == ""){
-        alert('Please enter your Email');
+    var validate=document.getElementById('Email').value;
+    if(validate == ""){
         document.getElementById('Email').style.borderColor = "red";
-        return false;
-    }else{
-        document.getElementById('Email').style.borderColor = "green";
-    }
-    if (/^[@]+$/.test(document.getElementById("Email").value)) {
-        alert("First Name Contains Numbers!");
-        document.getElementById('Email').style.borderColor = "red";
-        return false;
-    }else{
-        document.getElementById('Email').style.borderColor = "green";
-    }
-    if(fn.length <=2){
-        alert('Your Nname is too short');
-        document.getElementById('Email').style.borderColor = "red";
+        document.getElementById('FormAlert').innerHTML = 'Please Enter Your Email!';
         return false;
     }else{
         document.getElementById('Email').style.borderColor = "green";
     }
 
+
+    //Phone Validation 
+    var validate=document.getElementById('Phone').value;
+    if(validate == ""){
+        document.getElementById('Phone').style.borderColor = "red";
+        document.getElementById('FormAlert').innerHTML = 'Please Enter Your Phone!';
+        return false;
+    }else{
+        document.getElementById('Phone').style.borderColor = "green";
+    }
+
+    if(validate.length > 10){
+        document.getElementById('Phone').style.borderColor = "red";
+        document.getElementById('FormAlert').innerHTML = 'Your Phone is too long!';
+        return false;
+    }else{
+        document.getElementById('Phone').style.borderColor = "green";
+    }
+
+
+    //Zip Validation 
+    var validate=document.getElementById('Zip').value;
+
+    if(validate == ""){
+        document.getElementById('Zip').style.borderColor = "red";
+        document.getElementById('FormAlert').innerHTML = 'Please Enter Your Zip!';
+        return false;
+    }else{
+        document.getElementById('Zip').style.borderColor = "green";
+    }
+
+    if(validate.length > 5){
+        document.getElementById('Zip').style.borderColor = "red";
+        document.getElementById('FormAlert').innerHTML = 'Your Zip is too long!';
+        return false;
+    }else{
+        document.getElementById('Zip').style.borderColor = "green";
+    }
 
 }
-
-// $(document).ready(function(){
-//     var $form = $('form');
-//     $form.submit(function(){
-//        $.post($(this).attr('action'), $(this).serialize(), function(response){
-//              // do something here on success
-//        },'json');
-//        return false;
-//     });
-//  });
-
-    // </script>
