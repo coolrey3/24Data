@@ -72,9 +72,9 @@ function FormValidation() {
         document.getElementById('Phone').style.borderColor = "green";
     }
 
-    if(validate.length > 10){
+    if(validate.length < 10){
         document.getElementById('Phone').style.borderColor = "red";
-        document.getElementById('FormAlert').innerHTML = 'Your Phone is too long!';
+        document.getElementById('FormAlert').innerHTML = 'Your Phone is not long enough!';
         return false;
     }else{
         document.getElementById('Phone').style.borderColor = "green";

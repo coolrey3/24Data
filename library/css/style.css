@@ -92,13 +92,9 @@ a.nav-link {
     color: white !important;
 }
 
-
-
-
-
 /**************** ROWS*****************/
 .row.top {
-    padding-top:100px;
+    padding-top:60px;
 }
 
 .top , .mid {

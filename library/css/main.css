@@ -106,7 +106,7 @@ ul.navbar-nav {
 ul.navbar-nav li {
   padding-right: 2%; }
 
-.checkBoxContainer {
-  display: -webkit-box !important; }
+.navbar {
+  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */

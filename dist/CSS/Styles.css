@@ -106,8 +106,8 @@ ul.navbar-nav {
 ul.navbar-nav li {
   padding-right: 2%; }
 
-.checkBoxContainer {
-  display: -webkit-box !important; }
+.navbar {
+  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */
 
@@ -205,13 +205,9 @@ a.nav-link {
     color: white !important;
 }
 
-
-
-
-
 /**************** ROWS*****************/
 .row.top {
-    padding-top:100px;
+    padding-top:60px;
 }
 
 .top , .mid {
@@ -319,7 +315,8 @@ a.nav-link {
 
     .hidden img {
         width: 100%;
-        max-height:400px;
+        min-height:280px;
+        max-height:360px;
         margin: auto;
         max-width: 200px;
         text-align: center;
