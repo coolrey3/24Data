@@ -112,6 +112,9 @@ ul.navbar-nav li {
 .form-control-feedback {
   display: none; }
 
+p.navSkill {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */
 
 /************  DEFAULTS  *****************/
@@ -191,6 +194,7 @@ body.landingPage {
     display: block;
     background-color: rgba(0, 0, 0, .1);
 }
+
 /**************  NAV BAR  ***********/
 nav {
     background-color: #045487;
@@ -243,6 +247,13 @@ a.nav-link {
 }
 
 
+@media screen and (min-width:991px) {
+
+    p.navSkill {
+    display: none;
+}
+}
+
 @media screen and (max-width:991px) {
     li.seperator {
         display: none;
@@ -251,7 +262,15 @@ a.nav-link {
     nav.navbar.navbar-expand-lg.navbar-dark.bluebg.fixed-top {
         flex-direction: row-reverse;
     }
+
+    
+p.navSkill {
+    display: block;
+    position: fixed;
+    left: 84px;
 }
+}
+
 
 @media screen and (max-width:768px) {
 
@@ -376,4 +395,11 @@ a.nav-link {
     /* flex: 0 0 66.666667%; */
     max-width: 100%;
 }
+
+}
+
+@media screen and (max-width:286px) {
+    p.navSkill {
+        display: none !important;
+    }
 }
