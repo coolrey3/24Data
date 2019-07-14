@@ -21,11 +21,11 @@
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bluebg fixed-top">
-                <a class="navbar-brand" href="#"><img src="/dist/img/logo.png"></a>
+                <a class="navbar-brand" href="#"><img src="/dist/IMG/logo2.png"></a>
                 <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
                     data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span id= "HamBurger" class="navbar-toggler-icon"></span>
+                    <span id="HamBurger" class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -67,17 +67,19 @@
                     <div class="col-md-6 col-4 hidden">
                         <img src="/dist/img/cropped_phone1.png" alt="">
                     </div>
+
+                    <!-----------Start Form------------->
                     <div class="col-md-6 col-8">
                         <div class="form">
                             <container class="formContainer">
                                 <h1>Fill Out This Form</h1>
-                                <form id="MainForm" class="example">
 
+                                <form id="MainForm" class="example" method="get">
                                     <!-----------First Name Input------------->
                                     <div class="row">
                                         <div class="col-sm-12 form-group has-feedback">
                                             <input id="FirstName" class="full form-control" name="firstname" type="text"
-                                                placeholder="    First Name">
+                                            maxlength="20" placeholder="    First Name" required>
                                             <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                                         </div>
                                     </div>
@@ -86,8 +88,8 @@
                                     <div class="row">
                                         <div class="col-sm-12 form-group has-feedback">
 
-                                            <input id="LastName" class="full form-control" type="text"
-                                            name="lastname" placeholder="    Last Name">
+                                            <input id="LastName" class="full form-control" type="text" name="lastname"
+                                            maxlength="20" placeholder="    Last Name" required>
                                         </div>
                                     </div>
 
@@ -95,7 +97,7 @@
                                     <div class="row">
                                         <div class="form-group has-feedback col-sm-12">
                                             <input id="Email" class="full form-control" type="email" name="email"
-                                                placeholder="    Email Address">
+                                                placeholder="    Email Address" required>
                                             <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                                         </div>
                                     </div>
@@ -103,52 +105,55 @@
                                     <!-----------Phone Number------------->
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
-                                            <input id="Phone" class="half form-control left" type="number"
-                                            name="phone" placeholder="    Phone Number">
+                                            <input id="Phone" class="half form-control left" type="number" name="phone"
+                                                placeholder="    Phone Number" required>
+                                            <span class="form-control-feedback glyphicon glyphicon-ok"></span>
+
                                         </div>
 
-                                            <!-----------Zip Code------------->
+                                        <!-----------Zip Code------------->
                                         <div class="col-md-6 col-sm-12 form-group has-feedback formBox">
-                                            <input id="Zip" class="half form-control right" type="number"
-                                            name="zip" placeholder="    Zip Code">
+                                            <input id="Zip" class="half form-control right" type="number" name="zip"
+                                            maxlength="5"    placeholder="    Zip Code" required>
+                                            <span class="form-control-feedback glyphicon glyphicon-ok"></span>
+
                                         </div>
                                     </div>
-                                    <div class="row checkBoxContainer">
 
+                                    <!-----------Check Box------------->
+                                    <div class="row checkBoxContainer">
                                         <div class="col-3 formGroup">
                                             <input id="CheckBox" class="checkBox" type="checkbox" id="consentBox"
-                                                name="consentBox">
+                                                name="consentbox" required>
+                                            <span class="form-control-feedback glyphicon glyphicon-ok"></span>
+
                                         </div>
-
+                                        <!-----------Consent Text------------->
                                         <div class="col-9 formGroup">
-
                                             <label for="consentBox">I hereby consent to receive emails, text messages
                                                 and other electronic communications at the telephone and email listed
                                                 above.
                                             </label>
                                         </div>
-
                                     </div>
+
+                                    <!-----------Button------------->
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <!-- <a href="#" onclick="FormValidation()"> -->
-
-                                            <input id="Btn" class="btn" class="formBtn" type="submit">
-                                            <!-- </a> -->
+                                            <a href="#">
+                                                <!-- onclick="FormValidation()" -->
+                                                <input id="Btn" class="btn" class="formBtn" type="submit"
+                                                    value="Submit">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-
                                             <p id="FormAlert form-control-feedback"> </p>
                                         </div>
                                     </div>
-
                         </div>
                     </div>
-
-
-
                     </form>
                     </container>
 
@@ -237,16 +242,16 @@
 
 
     <!-- Main JS Script -->
-    <!-- <script src='./dist/js/main.min.js'></script> -->
+    <script src='./dist/js/main.min.js'></script>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
-    <script src="./library/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <script src='/library/js/scrap.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="./library/js/bootstrap/bootstrap.min.js"></script>
 
 
 

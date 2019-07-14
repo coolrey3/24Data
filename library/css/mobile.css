@@ -42,8 +42,8 @@ p.navSkill {
 
 
     .mid p {
-        font-size: .8em;
-        font-weight: 600;
+        font-size: 1em;
+        font-weight: 400;
 
     }
 
@@ -91,7 +91,7 @@ p.navSkill {
         min-height:280px;
         max-height:360px;
         margin: auto;
-        max-width: 200px;
+        max-width: 159px;
         text-align: center;
         display: block;
     }

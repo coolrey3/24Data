@@ -1,8 +1,8 @@
 /************  DEFAULTS  *****************/
 
-/* html {
-    font-family: ;
-} */
+html {
+    font-family: "Helvetica" !important;
+}
 
 nav,
 header,
@@ -35,30 +35,66 @@ body {
     display: flex;
     flex-wrap: wrap;
     /* align-items: center; */
-    margin:0;
+    margin: 0;
 }
 
 .row div {
     /* padding: 0; */
 }
+
 .row::after {
     display: table;
     clear: both;
     content: "";
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 * {
     box-sizing: border-box;
@@ -80,8 +116,9 @@ body.landingPage {
 nav {
     background-color: #045487;
     color: white;
-    border-bottom:  1px solid white;
-    font-size: 1.6rem; 
+    border-bottom: 1px solid white;
+    font-size: 1.25rem;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
@@ -95,22 +132,23 @@ a.nav-link {
 
 /**************** ROWS*****************/
 .row.top {
-    padding-top:60px;
+    padding-top: 60px;
 }
 
-.top , .mid {
+.top,
+.mid {
     /* height: 50px; */
     padding: 20px 3%;
 }
 
 
-.mid p  {
+.mid p {
     font-size: 1.2em;
     /* font-weight: 600; */
     padding: 5px 5%;
     text-overflow: ellipsis;
     word-break: break-all;
-    
+
 
 }
 
@@ -118,12 +156,18 @@ a.nav-link {
 
     text-align: center;
     margin-bottom: 15px;
-    
+
 }
 
 .mid img {
     width: 100%;
-    max-width: 600px
+    max-width: 600px;
     margin: auto;
+}
+
+
+/* Error Alignment */
+label#consentbox-error {
+    text-align: center;
 }
 
