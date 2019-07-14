@@ -4,6 +4,9 @@
 .shown {
   display: unset; }
 
+.row.mobileFormText.hidden {
+  display: none; }
+
 /* ***************  Form Container  ******************** */
 .formGroup {
   display: inline; }
@@ -37,7 +40,7 @@ form {
   margin: auto; }
 
 label {
-  font-size: 12px;
+  font-size: 0.6em;
   text-align: left; }
 
 input.half {
@@ -96,6 +99,15 @@ h1.sideTitle {
 
 .mobileTitleText h1 {
   text-align: center; }
+
+ul.navbar-nav {
+  display: -webkit-inline-box; }
+
+ul.navbar-nav li {
+  padding-right: 2%; }
+
+.checkBoxContainer {
+  display: -webkit-box !important; }
 
 /*# sourceMappingURL=main.css.map */
 
@@ -226,6 +238,16 @@ a.nav-link {
 }
 
 
+@media screen and (max-width:991px) {
+    li.seperator {
+        display: none;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-dark.bluebg.fixed-top {
+        flex-direction: row-reverse;
+    }
+}
+
 @media screen and (max-width:768px) {
 
     .top,
@@ -318,7 +340,28 @@ a.nav-link {
         margin:auto;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-dark.bluebg.fixed-top {
-        flex-direction: row-reverse;
+
+    .mid p  {
+        /* font-size: 1.6em; */
+        /* font-weight: 600; */
+        padding: 0;
     }
+
+    .row.mid {
+        padding: 2%;
+    }
+
+    .row.mobileFormText.hidden {
+        text-align: center;
+        display: block;
+    }
+
+    .formContainer h1 {
+        display: none;
+    }
+
+    .col-md-6.col-4.hidden {
+        padding: 0;
+    }
+    
 }

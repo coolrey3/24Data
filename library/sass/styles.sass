@@ -1,10 +1,14 @@
 
 // ******************** Toggle Display  ********************   // 
 .hidden 
-    display: none
+    display: none 
 
 .shown
     display: unset
+
+.row.mobileFormText.hidden 
+    display: none
+
 
 
 /* ***************  Form Container  ******************** */
@@ -53,7 +57,7 @@ form
 
 
 label
-    font-size: 12px
+    font-size: .6em
     text-align: left
 
 input.half
@@ -116,3 +120,13 @@ h1.sideTitle
     
 .mobileTitleText h1
     text-align: center
+
+ul.navbar-nav
+        display: -webkit-inline-box
+
+ul.navbar-nav li 
+    padding-right: 2%
+    // line-height: 2
+    
+.checkBoxContainer 
+    display: -webkit-box !important

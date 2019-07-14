@@ -1,3 +1,13 @@
+@media screen and (max-width:991px) {
+    li.seperator {
+        display: none;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-dark.bluebg.fixed-top {
+        flex-direction: row-reverse;
+    }
+}
+
 @media screen and (max-width:768px) {
 
     .top,
@@ -90,7 +100,28 @@
         margin:auto;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-dark.bluebg.fixed-top {
-        flex-direction: row-reverse;
+
+    .mid p  {
+        /* font-size: 1.6em; */
+        /* font-weight: 600; */
+        padding: 0;
     }
+
+    .row.mid {
+        padding: 2%;
+    }
+
+    .row.mobileFormText.hidden {
+        text-align: center;
+        display: block;
+    }
+
+    .formContainer h1 {
+        display: none;
+    }
+
+    .col-md-6.col-4.hidden {
+        padding: 0;
+    }
+    
 }

@@ -30,16 +30,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">skill test</a>
                         </li>
-                        <li> | </li>
+                        <li class="seperator"> | </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
-                        <li> | </li>
+                        <li class="seperator"> | </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
-                        <li> | </li>
+                        <li class="seperator"> | </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -53,87 +53,97 @@
     <div class="container-fluid">
         <div class="row top">
             <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-md-6 desktop ">
-                        <img class="desktop" src="/library/img/DT-cropped.png" alt="desktop">
-                    </div>
-                    <div class="col-sm-4 hidden">
-                        <img src="/library/img/cropped_phone.png" alt="">
-                    </div>
-                    <div class="col-md-6 col-sm-8">
-                        <div class="form">
-                            <container class="formContainer">
-                                <h1>Fill Out This Form</h1>
-                                <form action="" method="post" onsubmit="return FormValidation();" onchange="return FormValidation();">
-                                        <div class="row">
-                                        <div class="col-sm-12">
-
-                                            <input id="FirstName" class="full" type="text" placeholder="    First Name">
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-
-                                            <input id="LastName" class="full" type="text" placeholder="    Last Name">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-
-
-                                            <input id="Email" class="full" type="email" placeholder="    Email Address">
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <input id="Phone" class="half left" type="number"
-                                                placeholder="    Phone Number">
-                                        </div>
-                                        <div class="col-md-6 col-sm-12 formBox">
-                                            <input id="Zip" class="half right" type="number" placeholder="    Zip Code">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-
-                                        <div class="col-sm-3 formGroup">
-                                            <input id="CheckBox" class="checkBox" type="checkbox" id="consentBox">
-                                        </div>
-
-                                        <div class="col-sm-9 formGroup">
-
-                                            <label for="consentBox">I hereby consent to receive emails, text messages
-                                                and other electronic communications at the telephone and email listed
-                                                above.
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                                <!-- <a href="#" onclick="FormValidation()"> -->
-                                                        
-                                                        <input id="Btn" class="btn" class="formBtn" type="submit">
-                                                    <!-- </a> -->
-                                        </div>
-
-                                    </div>
+                <div class="row mobileFormText hidden">
+                    <h1> Fill Out This Form </h1>
+                </div>
+                    <div class="row">
+                        <div class="col-md-6 desktop ">
+                            <img class="desktop" src="/library/img/DT-cropped.png" alt="desktop">
                         </div>
+                        <div class="col-md-6 col-4 hidden">
+                            <img src="/library/img/cropped_phone1.png" alt="">
+                        </div>
+                        <div class="col-md-6 col-8">
+                            <div class="form">
+                                <container class="formContainer">
+                                    <h1>Fill Out This Form</h1>
+                                    <form action="" method="post" onsubmit="return FormValidation();"
+                                        onchange="return FormValidation();">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+
+                                                <input id="FirstName" class="full" type="text"
+                                                    placeholder="    First Name">
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+
+                                                <input id="LastName" class="full" type="text"
+                                                    placeholder="    Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+
+
+                                                <input id="Email" class="full" type="email"
+                                                    placeholder="    Email Address">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <input id="Phone" class="half left" type="number"
+                                                    placeholder="    Phone Number">
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 formBox">
+                                                <input id="Zip" class="half right" type="number"
+                                                    placeholder="    Zip Code">
+                                            </div>
+                                        </div>
+                                        <div class="row checkBoxContainer">
+
+                                            <div class="col-3 formGroup">
+                                                <input id="CheckBox" class="checkBox" type="checkbox" id="consentBox">
+                                            </div>
+
+                                            <div class="col-9 formGroup">
+
+                                                <label for="consentBox">I hereby consent to receive emails, text
+                                                    messages
+                                                    and other electronic communications at the telephone and email
+                                                    listed
+                                                    above.
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <!-- <a href="#" onclick="FormValidation()"> -->
+
+                                                <input id="Btn" class="btn" class="formBtn" type="submit">
+                                                <!-- </a> -->
+                                            </div>
+
+                                        </div>
+                            </div>
 
 
 
-                        </form>
-                        </container>
+                            </form>
+                            </container>
 
+                        </div>
                     </div>
+
                 </div>
 
             </div>
 
         </div>
-
-    </div>
     </div>
 
     <div class="container-fluid">
