@@ -33,7 +33,7 @@
 form {
   max-width: 70%;
   text-align: center;
-  min-width: 300px;
+  min-width: 29%;
   margin: auto; }
 
 label {
@@ -72,9 +72,12 @@ div.mainText {
   font-size: 50px; }
 
 img.desktop {
-  width: 85%;
+  width: 95%;
   margin: auto;
-  max-height: 650px; }
+  max-height: 100%;
+  min-height: 80%;
+  max-width: 700px;
+  display: block; }
 
 h1.sideTitle {
   text-align: left; }

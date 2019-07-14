@@ -62,7 +62,12 @@
     }
 
     .hidden img {
-        width: 100%
+        width: 100%;
+        max-height:400px;
+        margin: auto;
+        max-width: 200px;
+        text-align: center;
+        display: block;
     }
 
     .mainTitleText {
@@ -70,12 +75,22 @@
     }
 
     .row.mid {
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
     }
 
     .mobileTitleText {
         display: block;
     }
 
+    .desktop {
+        display: none;
+    }
 
+    .col-sm-12.col-md-9.mainText {
+        margin:auto;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-dark.bluebg.fixed-top {
+        flex-direction: row-reverse;
+    }
 }
