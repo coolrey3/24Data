@@ -40,7 +40,7 @@ form {
   margin: auto; }
 
 label {
-  font-size: 0.6em;
+  font-size: 0.8em;
   text-align: left; }
 
 input.half {
@@ -108,6 +108,9 @@ ul.navbar-nav li {
 
 .navbar {
   padding: 0; }
+
+.form-control-feedback {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
 
