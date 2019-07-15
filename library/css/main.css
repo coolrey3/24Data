@@ -1,75 +1,95 @@
 .hidden {
-  display: none; }
+  display: none;
+}
 
 .shown {
-  display: unset; }
+  display: unset;
+}
 
 .row.mobileFormText.hidden {
-  display: none; }
+  display: none;
+}
 
 /* ***************  Form Container  ******************** */
 .formGroup {
-  display: inline; }
+  display: inline;
+}
 
 .formBtn {
-  min-width: 50px; }
+  min-width: 50px;
+}
 
 .form {
   text-align: center;
   color: white;
-  margin: auto; }
+  margin: auto;
+}
 
 .form input {
   margin: 10px 0;
   border-radius: 5px;
-  width: 100%; }
+  width: 100%;
+}
 
 .formGroup {
-  display: block; }
+  display: block;
+}
 
 .formContainer {
-  width: 600px; }
+  width: 600px;
+}
 
 .formBox {
-  margin: auto; }
+  margin: auto;
+}
 
 form {
   max-width: 476px;
   text-align: center;
   min-width: 29%;
-  margin: auto; }
+  margin: auto;
+}
 
 label {
   font-size: 0.8em;
-  text-align: left; }
+  text-align: left;
+}
 
 input.half {
-  width: 90%; }
+  width: 90%;
+}
 
 .left {
-  float: left; }
+  float: left;
+}
 
 .right {
-  float: right; }
+  float: right;
+}
 
 .checkBox {
   border: solid 1px black;
-  float: left; }
+  float: left;
+}
 
 input.btn {
   width: 115px;
   padding: 1px 5px;
   color: #FFF;
-  background-color: #6CB9E3; }
+  background-color: #6CB9E3;
+}
 
 li.nav-item {
-  color: white; }
+  color: white;
+}
 
 .mainText h1 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .upperCase {
-  font-size: 50px; }
+  font-size: 50px;
+}
 
 img.desktop {
   width: 95%;
@@ -77,41 +97,53 @@ img.desktop {
   max-height: 100%;
   min-height: 80%;
   max-width: 700px;
-  display: block; }
+  display: block;
+}
 
 h1.sideTitle {
   text-align: left;
   font-weight: 550;
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+}
 
 .side li {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .side ol {
-  padding-left: 22px; }
+  padding-left: 22px;
+}
 
 .side.hidden img {
-  display: none; }
+  display: none;
+}
 
 .TitleText h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 .mobileTitleText h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 ul.navbar-nav {
-  display: -webkit-inline-box; }
+  display: -webkit-inline-box;
+}
 
 ul.navbar-nav li {
-  padding-right: 2%; }
+  padding-right: 2%;
+}
 
 .navbar {
-  padding: 0; }
+  padding: 0;
+}
 
 a.navbar-brand {
-  padding-left: 20px; }
+  padding-left: 20px;
+}
 
 p.navSkill {
-  display: none; }
+  display: none;
+}
 
 /*# sourceMappingURL=main.css.map */

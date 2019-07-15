@@ -11,15 +11,14 @@ I was able to get it to work by linking the src to bootstrap files via a CDN but
 
 Because of this, I decided to apply the validation styling solely via CSS and just use the JQuery validator to add more details to the error messages.
 
-I wrapped up my project by concatenating and minifying all my dev files and have uploaded this repo to easily browse the code. 
+I wrapped up my project by concatenating and minifying all my files and images and uploaded this repo to easily browse the code. 
 
 ## Tools Used
-
-##### -Node / Grunt
+##### -Node / Grunt / 
 ##### -BootStrap 4 
+##### -Sass
 ##### -JQuery - JQuery validation 
 ##### -iloveimg.com 
-
 
 ## Highlights
 
@@ -28,4 +27,4 @@ I wrapped up my project by concatenating and minifying all my dev files and have
 When doing the form validation I ran in to an issue using glyphicons and had to scrap the original method of form validation I was using. Also ran in to issues getting boostrap to display correctly on the tablet view at exactly 768 pixels. Resizes correctly below that.
 
 ## Next Steps
-
+If I were to hand the code off I would organize the Sass files to follow the SMACSS file structure and change the method used for displaying the Skills Test text when changing between viewport sizes.
