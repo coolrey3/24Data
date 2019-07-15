@@ -13,9 +13,7 @@ footer {
 body {
     margin: 0;
     color: white;
-
 }
-
 
 .container {
     width: 100%;
@@ -34,12 +32,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
     margin: 0;
-}
-
-.row div {
-    /* padding: 0; */
 }
 
 .row::after {
@@ -137,14 +130,12 @@ a.nav-link {
 
 .top,
 .mid {
-    /* height: 50px; */
     padding: 20px 3%;
 }
 
 
 .mid p {
     font-size: 1.2em;
-    /* font-weight: 600; */
     padding: 5px 5%;
     text-overflow: ellipsis;
     word-break: break-all;
@@ -177,6 +168,9 @@ a.nav-link {
     -webkit-font-smoothing: antialiased;
 }
 
+.row.checkBoxContainer {
+    padding-top: 10px;
+}
 
 /* Error Alignment */
 label#consentbox-error {
@@ -186,18 +180,10 @@ label#consentbox-error {
 
 /* validation */
 
-/* .simple-form {
-    display: flex;
-    overflow-y: scroll;
-    padding-bottom: 1.25rem;
-} */
-
 .simple-form input {
     margin: 0 .25rem;
-    min-width: 125px;
-    /* border: 2px solid #eee; */
-    /* border-left: 3px solid; */
-    border-radius: 5px;
+    min-width: 25px;
+    border-radius: 8px;
     transition: border-color .5s ease-out;
 }
 
@@ -206,18 +192,15 @@ label#consentbox-error {
     border-color: 2px solid green;
 }
 
-/* .simple-form input:invalid {
-    border: 2px solid red;
-} */
 
 .simple-form input:required:valid {
-    background: url("/library/img/checkmark.png") no-repeat 95% 50%;
+    background: url("/dist/img/checkmark.png") no-repeat 95% 50%;
     background-size: 25px;
     background-color: white
 }
 
 .simple-form input:focus:invalid {
-    background: url("/library/img/error.png") no-repeat 95% 50%;
+    background: url("/dist/img/error.png") no-repeat 95% 50%;
     background-size: 25px;
     background-color: white
 }

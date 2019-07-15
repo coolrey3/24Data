@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Headerr -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'> -->
-    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="/library/css/imported.css"> -->
-    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/library/css/bootstrap/bootstrap.min.css">
+
+    <!--   Custom Styles -->
     <link rel="stylesheet" href='/dist/CSS/Styles.min.css'>
     <link rel="stylesheet" href='/dist/CSS/main.css'>
 
     <title>Document</title>
 </head>
 
+<!-- Body -->
 <body class="landingPage">
 
+    <!-- header -->
     <header>
         <div class="container-fluid">
+
+            <!-- Navigation -->
             <nav class="navbar navbar-expand-lg navbar-dark bluebg fixed-top">
                 <a class="navbar-brand" href="#"><img src="/dist/IMG/logo2.png"></a>
                 <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
@@ -59,9 +62,13 @@
     <div class="container-fluid">
         <div class="row top">
             <div class="col-sm-12">
+
+                <!-- Mobile Form Title -->
                 <div class="row mobileFormText hidden">
                     <h1> Fill Out This Form </h1>
                 </div>
+
+                <!-- Images For Desktop and Mobile -->
                 <div class="row">
                     <div class="col-md-6 desktop ">
                         <img class="desktop" src="/dist/img/DT-cropped.png" alt="desktop">
@@ -81,9 +88,7 @@
                                     <div class="row">
                                         <div class="col-sm-12 form-group has-feedback">
                                             <input id="FirstName" class="full form-control" name="firstname" type="text"
-                                            maxlength="20" placeholder="    First Name" required>
-                                            <span class="form-control-feedback glyphicon glyphicon-ok"></span>
-                                        </div>
+                                            maxlength="20" placeholder="    First Name" required>                                        </div>
                                     </div>
 
                                     <!-----------Last Name Input------------->
@@ -99,9 +104,7 @@
                                     <div class="row">
                                         <div class="form-group has-feedback col-sm-12">
                                             <input id="Email" class="full form-control" type="email" name="email"
-                                                placeholder="    Email Address" required>
-                                            <span class="form-control-feedback glyphicon glyphicon-ok"></span>
-                                        </div>
+                                                placeholder="    Email Address" required>                                        </div>
                                     </div>
 
                                     <!-----------Phone Number------------->
@@ -109,16 +112,12 @@
                                         <div class="col-md-6 col-sm-12">
                                             <input id="Phone" class="half form-control left" type="tel" name="phone"
                                                 placeholder="    Phone Number" minlength="10" maxlength="13" required>
-                                            <span class="form-control-feedback glyphicon glyphicon-ok"></span>
-
                                         </div>
 
                                         <!-----------Zip Code------------->
                                         <div class="col-md-6 col-sm-12 form-group has-feedback formBox">
                                             <input id="Zip" class="half form-control right" type="text" name="zip"
                                             maxlength="5" minlength="5"    placeholder="    Zip Code" required>
-                                            <span class="form-control-feedback glyphicon glyphicon-ok"></span>
-
                                         </div>
                                     </div>
 
@@ -127,8 +126,6 @@
                                         <div class="col-3 formGroup">
                                             <input id="CheckBox" class="checkBox" type="checkbox" id="consentBox"
                                                 name="consentbox" required>
-                                            <span class="form-control-feedback glyphicon glyphicon-ok"></span>
-
                                         </div>
                                         <!-----------Consent Text------------->
                                         <div class="col-9 formGroup">
@@ -143,7 +140,6 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <a href="#">
-                                                <!-- onclick="FormValidation()" -->
                                                 <input id="Btn" class="btn" class="formBtn" type="submit"
                                                     value="Submit">
                                             </a>
@@ -152,7 +148,6 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <p id="FormAlert form-control-feedback"> </p>
                                         </div>
                                     </div>
                         </div>
