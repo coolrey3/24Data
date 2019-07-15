@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     // Toggle display of Skill Text in mobile
     document.getElementById('HamBurger').onclick = function () {
         if (document.getElementById('NavSkill').style.display == "none") {
@@ -50,6 +51,10 @@ $(document).ready(function () {
             event.preventDefault();
             if ($('#CheckBox').is(':checked')) {
                 document.getElementById('FormAlert').innerHTML = "Form submitted successfully! We'll get back to you soon. Thank you";
+                var nameValue = document.getElementById("FirstName").value;
+                console.log(nameValue);
+                $('#exampleModal').modal('show');
+                document.getElementById("ModalBody").innerHTML = "Thanks " +nameValue+ "! Your submission succeeded";
             }
     });
 });

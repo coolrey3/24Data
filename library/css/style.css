@@ -105,6 +105,10 @@ body.landingPage {
     background-color: rgba(0, 0, 0, .1);
 }
 
+.modal {
+    color:black;
+}
+
 /**************  NAV BAR  ***********/
 nav {
     background-color: #045487;
