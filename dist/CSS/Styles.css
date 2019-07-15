@@ -385,14 +385,6 @@ label#consentbox-error {
         margin-bottom: 15px;
     }
 
-    form input {
-        /* max-width:66%; */
-    }
-
-    .mainText {
-        /* padding: 30px; */
-    }
-
     img .phone {
         display: none
     }
@@ -404,7 +396,6 @@ label#consentbox-error {
     .formGroup {
         min-width: 45px;
         display: inline-block;
-        float: left;
     }
 
     .hidden {

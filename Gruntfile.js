@@ -1,5 +1,3 @@
-// const mozjpeg = require('imagemin-mozjpeg');
-
 module.exports = function (grunt) {
 
   // Project configuration.
@@ -7,10 +5,10 @@ module.exports = function (grunt) {
 
 
     concat: {
-      js: {
-        src: ['./library/js/script.js'],
-        dest: 'dist/JS/main.js',
-      },
+      // js: {
+      //   src: ['/library/js/script.js'],
+      //   dest: '/dist/JS/main.js',
+      // },
       css: {
         src: ['./library/css/main.css', './library/css/style.css', './library/css/mobile.css'],
         dest: 'dist/CSS/Styles.css',
@@ -33,36 +31,34 @@ module.exports = function (grunt) {
     uglify: {
       my_target: {
         files: {
-          'dist/JS/main.min.js': ['./library/js/script.js']
+          'dist/JS/main.min.js': ['/library/js/script.js']
         }
       }
     },
 
     imagemin: {
-
       dynamic: {
-          files: [{
-              expand: true,
-              cwd: 'library/img',
-              src: ['**/*.{png,jpg,gif}'],
-              dest: 'dist/IMG'
-          }]
+        files: [{
+          expand: true,
+          cwd: 'library/img',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'dist/IMG'
+        }]
       }
+    },
 
-  },
-
-  cssmin: {
-    target: {
-      files: [{
-        expand: true,
-        cwd: 'dist/CSS',
-        src: ['*.css', '!*.min.css'],
-        dest: 'dist/CSS',
-        ext: '.min.css'
-      }]
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'dist/CSS',
+          src: ['*.css', '!*.min.css'],
+          dest: 'dist/CSS',
+          ext: '.min.css'
+        }]
+      }
     }
-  }
-  
+
 
 
   });
@@ -74,7 +70,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-// Register Default
-  grunt.registerTask("default", ['concat', 'uglify','imagemin', 'watch']);
+  // Register Default
+  grunt.registerTask("default", ['concat', 'watch']);
 
 };

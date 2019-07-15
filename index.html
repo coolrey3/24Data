@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!-- Headerr -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
 </head>
 
 <!-- Body -->
+
 <body class="landingPage">
 
     <!-- header -->
@@ -25,6 +27,8 @@
         <div class="container-fluid">
 
             <!-- Navigation -->
+
+            <!-- DropDown -->
             <nav class="navbar navbar-expand-lg navbar-dark bluebg fixed-top">
                 <a class="navbar-brand" href="#"><img src="/dist/IMG/logo2.png"></a>
                 <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
@@ -32,6 +36,8 @@
                     aria-label="Toggle navigation">
                     <span id="HamBurger" class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Nav Links -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -53,12 +59,15 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Mobile JS Text -->
                 <p class="navSkill" id="NavSkill">Skill Test</p>
 
             </nav>
         </div>
     </header>
 
+    <!-- Top Container -->
     <div class="container-fluid">
         <div class="row top">
             <div class="col-sm-12">
@@ -83,12 +92,12 @@
                             <container class="formContainer">
                                 <h1>Fill Out This Form</h1>
 
-                                <form id="MainForm" class="example simple-form" >
+                                <form id="MainForm" class="example simple-form">
                                     <!-----------First Name Input------------->
                                     <div class="row">
                                         <div class="col-sm-12 form-group has-feedback">
                                             <input id="FirstName" class="full form-control" name="firstname" type="text"
-                                            maxlength="20" placeholder="    First Name" required>                                        </div>
+                                                maxlength="20" placeholder="    First Name" required> </div>
                                     </div>
 
                                     <!-----------Last Name Input------------->
@@ -96,7 +105,7 @@
                                         <div class="col-sm-12 form-group has-feedback">
 
                                             <input id="LastName" class="full form-control" type="text" name="lastname"
-                                            maxlength="20" placeholder="    Last Name" required>
+                                                maxlength="20" placeholder="    Last Name" required>
                                         </div>
                                     </div>
 
@@ -104,7 +113,7 @@
                                     <div class="row">
                                         <div class="form-group has-feedback col-sm-12">
                                             <input id="Email" class="full form-control" type="email" name="email"
-                                                placeholder="    Email Address" required>                                        </div>
+                                                placeholder="    Email Address" required> </div>
                                     </div>
 
                                     <!-----------Phone Number------------->
@@ -117,7 +126,7 @@
                                         <!-----------Zip Code------------->
                                         <div class="col-md-6 col-sm-12 form-group has-feedback formBox">
                                             <input id="Zip" class="half form-control right" type="text" name="zip"
-                                            maxlength="5" minlength="5"    placeholder="    Zip Code" required>
+                                                maxlength="5" minlength="5" placeholder="    Zip Code" required>
                                         </div>
                                     </div>
 
@@ -165,14 +174,15 @@
     </div>
     </div>
 
+    <!-- Mid Container -->
     <div class="container-fluid">
 
         <div class="row mid">
             <div class="col-sm-12">
-                <div class='mobile'>
-
-                </div>
                 <div class="row mid">
+
+
+                    <!-- Main Text -->
                     <div class="col-sm-12 col-md-8 mainText">
                         <h1 class="mainTitleText "><span class="upperCase">M</span>AIN <span
                                 class="upperCase">B</span>ODY <span class="upperCase">T</span>EXT</h1>
@@ -206,6 +216,8 @@
                             amet nisl suscipit.
                         </p>
                     </div>
+
+                    <!-- Side Text -->
                     <div class="col-sm-4 side shown">
                         <img class="phone" src="/dist/img/phone.png" alt="phone">
                         <h1>Desktop Side Area</h1>
@@ -219,6 +231,7 @@
                         </ol>
                     </div>
 
+                    <!-- Mobile Text -->
                     <div class="col-sm-12 col-md-12 side hidden TitleText">
                         <img class="phone" src="/dist/img/phone.png" alt="phone">
                         <h1 class="sideTitle">Mobile Main Area</h1>
@@ -237,33 +250,14 @@
         </div>
     </div>
 
-
-
-    <!-- Main JS Script -->
-    <script src='./dist/js/main.min.js'></script>
-
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-    <script src='/library/js/scrap.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="./library/js/bootstrap/bootstrap.min.js"></script>
-
-
-
-
-
-
-
-
+    <script src="/library/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Main JS Script -->
+    <script src='/dist/js/main.min.js'></script>
 
 </body>
-
-
-
-
-
 
 </html>
