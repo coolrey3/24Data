@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'> -->
     <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="/library/css/imported.css"> -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/library/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href='/dist/CSS/Styles.min.css'>
     <link rel="stylesheet" href='/dist/CSS/main.css'>
@@ -74,7 +76,7 @@
                             <container class="formContainer">
                                 <h1>Fill Out This Form</h1>
 
-                                <form id="MainForm" class="example" method="get">
+                                <form id="MainForm" class="example simple-form" >
                                     <!-----------First Name Input------------->
                                     <div class="row">
                                         <div class="col-sm-12 form-group has-feedback">
@@ -105,16 +107,16 @@
                                     <!-----------Phone Number------------->
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
-                                            <input id="Phone" class="half form-control left" type="number" name="phone"
-                                                placeholder="    Phone Number" required>
+                                            <input id="Phone" class="half form-control left" type="tel" name="phone"
+                                                placeholder="    Phone Number" minlength="10" maxlength="13" required>
                                             <span class="form-control-feedback glyphicon glyphicon-ok"></span>
 
                                         </div>
 
                                         <!-----------Zip Code------------->
                                         <div class="col-md-6 col-sm-12 form-group has-feedback formBox">
-                                            <input id="Zip" class="half form-control right" type="number" name="zip"
-                                            maxlength="5"    placeholder="    Zip Code" required>
+                                            <input id="Zip" class="half form-control right" type="text" name="zip"
+                                            maxlength="5" minlength="5"    placeholder="    Zip Code" required>
                                             <span class="form-control-feedback glyphicon glyphicon-ok"></span>
 
                                         </div>
@@ -146,6 +148,7 @@
                                                     value="Submit">
                                             </a>
                                         </div>
+
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">

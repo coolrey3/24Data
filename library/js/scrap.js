@@ -8,51 +8,46 @@ document.getElementById('HamBurger').onclick = function () {
 
 };
 
-$.validator.addMethod("length", function (value, element) {
-    return value.length <= 20;
-}, 'Your name must be less than 20 characters')
-
-
 $(document).ready(function () {
 
     $('#MainForm').validate(
 
         {
-            // rules: {
-            //     email: {
-            //         required: true,
-            //         email: true
-            //     },
+            rules: {
+                // email: {
+                //     required: true,
+                //     email: true
+                // },
 
-            //     firstname: {
-            //         required: true,
-            //         firstname: true,
-            //         length: true
-            //     },
+                // firstname: {
+                //     required: true
+                // firstname: true
+                // length: true
+                // }
 
-            //     lastname: {
-            //         required: true,
-            //         lastname: true,
-            //         length: true
-            //     },
+                //     lastname: {
+                //         required: true,
+                //         lastname: true,
+                //         length: true
+                //     },
 
-            //     zip: {
-            //         required: true,
-            //         zip: true
-            //     },
+                //     zip: {
+                //         required: true,
+                //         zip: true
+                //     },
 
-            //     phone: {
-            //         required: true,
-            //         phone: true
-            //     },
+                //     phone: {
+                //         required: true,
+                //         phone: true
+                //     },
 
-            //     consentbox: {
-            //         required: true,
-            //         consentbox: true
-            //     }
+                //     consentbox: {
+                //         required: true,
+                //         consentbox: true
+                //     }
 
 
-            // },
+            },
 
             messages: {
                 email: {
