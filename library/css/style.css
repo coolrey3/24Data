@@ -183,8 +183,7 @@ label#consentbox-error {
     text-align: center;
 }
 
-
-/* validation */
+/*Form  validation */
 
 .simple-form input {
     margin: 0 .25rem;
@@ -193,20 +192,21 @@ label#consentbox-error {
     transition: border-color .5s ease-out;
 }
 
-
 .simple-form input:required:valid {
     border-color: 2px solid green;
 }
 
-
 .simple-form input:required:valid {
     background: url("/dist/img/checkmark.png") no-repeat 95% 50%;
     background-size: 25px;
-    background-color: white
+    background-color: white;
+    border: 2px solid green;
+
 }
 
 .simple-form input:focus:invalid {
     background: url("/dist/img/error.png") no-repeat 95% 50%;
     background-size: 25px;
-    background-color: white
+    background-color: white;
+    border:2px solid red;
 }

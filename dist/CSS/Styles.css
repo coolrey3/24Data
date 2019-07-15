@@ -301,8 +301,7 @@ label#consentbox-error {
     text-align: center;
 }
 
-
-/* validation */
+/*Form  validation */
 
 .simple-form input {
     margin: 0 .25rem;
@@ -311,22 +310,23 @@ label#consentbox-error {
     transition: border-color .5s ease-out;
 }
 
-
 .simple-form input:required:valid {
     border-color: 2px solid green;
 }
 
-
 .simple-form input:required:valid {
     background: url("/dist/img/checkmark.png") no-repeat 95% 50%;
     background-size: 25px;
-    background-color: white
+    background-color: white;
+    border: 2px solid green;
+
 }
 
 .simple-form input:focus:invalid {
     background: url("/dist/img/error.png") no-repeat 95% 50%;
     background-size: 25px;
-    background-color: white
+    background-color: white;
+    border:2px solid red;
 }
 @media screen and (min-width:991px) {
 
@@ -358,7 +358,6 @@ label#consentbox-error {
     .top,
     .mid {
         padding: 0;
-        /* width: 50%; */
     }
 
     button.navbar-toggler.hamburger {
@@ -444,8 +443,6 @@ label#consentbox-error {
 
 
     .mid p {
-        /* font-size: 1.6em; */
-        /* font-weight: 600; */
         padding: 0;
     }
 
@@ -467,9 +464,6 @@ label#consentbox-error {
     }
 
     .col-md-8 {
-        /* -webkit-box-flex: 0;
-    -ms-flex: 0 0 66.666667%; */
-        /* flex: 0 0 66.666667%; */
         max-width: 100%;
     }
 
