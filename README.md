@@ -5,10 +5,12 @@ This Project was intended as a skill test and the outline was to re-create this 
 
  to add detail to the error messages output during form validation.
 
-# Libraries / Frameworks Used
+# Tools Used
+
+### Node / Grunt
 ### BootStrap 4 
-### JQuery along
-####    JQuery validation 
+### JQuery - JQuery validation 
+
 
 # Highlights
 
