@@ -162,35 +162,24 @@ a.nav-link {
     margin: auto;
 }
 
-
-.glyphicon {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-}
-
+/* Checkbox Alignment */
 .row.checkBoxContainer {
     padding-top: 10px;
 }
 
-/* Error Alignment */
 label#consentbox-error {
     text-align: center;
 }
 
 /*Form  validation */
-
 .simple-form input {
     margin: 0 .25rem;
     min-width: 25px;
     border-radius: 8px;
     transition: border-color .5s ease-out;
 }
+
+/* Valid input style */
 
 .simple-form input:required:valid {
     border-color: 2px solid green;
@@ -204,6 +193,8 @@ label#consentbox-error {
 
 }
 
+
+/* Invalid input style */
 .simple-form input:focus:invalid {
     background: url("/dist/img/error.png") no-repeat 95% 50%;
     background-size: 25px;

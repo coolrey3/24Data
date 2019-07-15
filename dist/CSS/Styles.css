@@ -280,35 +280,24 @@ a.nav-link {
     margin: auto;
 }
 
-
-.glyphicon {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-}
-
+/* Checkbox Alignment */
 .row.checkBoxContainer {
     padding-top: 10px;
 }
 
-/* Error Alignment */
 label#consentbox-error {
     text-align: center;
 }
 
 /*Form  validation */
-
 .simple-form input {
     margin: 0 .25rem;
     min-width: 25px;
     border-radius: 8px;
     transition: border-color .5s ease-out;
 }
+
+/* Valid input style */
 
 .simple-form input:required:valid {
     border-color: 2px solid green;
@@ -322,12 +311,15 @@ label#consentbox-error {
 
 }
 
+
+/* Invalid input style */
 .simple-form input:focus:invalid {
     background: url("/dist/img/error.png") no-repeat 95% 50%;
     background-size: 25px;
     background-color: white;
     border:2px solid red;
 }
+/********** Hide Skill Text  ************/
 @media screen and (min-width:991px) {
 
     p.navSkill {
@@ -335,6 +327,7 @@ label#consentbox-error {
     }
 }
 
+/********* Show Skill Text , reverse rows, and hide seperators on viewport change***********/
 @media screen and (max-width:991px) {
     li.seperator {
         display: none;
@@ -352,46 +345,43 @@ label#consentbox-error {
     }
 }
 
-
+/************* Mobile Styles **********/
 @media screen and (max-width:768px) {
 
+    /************** Rows ***********/
     .top,
     .mid {
         padding: 0;
     }
 
-    button.navbar-toggler.hamburger {
-
-        text-align: left;
+    .mid p {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 0;
     }
 
+    .row.mid {
+        flex-direction: column-reverse;
+        padding: 2%;
+    }
+
+    .row.mobileFormText.hidden {
+        text-align: center;
+        display: block;
+    }
+
+    /*********** Hide Third paragraph on mobile *************/
+    .thirdP {
+        display: none
+    }
+
+    /*********** images **************/
     img.desktop {
         display: none;
     }
 
     .logo {
-        max-width:40px; 
-    }
-
-
-    .mid p {
-        font-size: 1em;
-        font-weight: 400;
-
-    }
-
-    form {
-        max-width: 100%;
-    }
-
-    .thirdP {
-        display: none
-    }
-
-    form input.half {
-        width: 100%;
-        float: none;
-        margin-bottom: 15px;
+        max-width: 40px;
     }
 
     img .phone {
@@ -402,11 +392,31 @@ label#consentbox-error {
         display: none
     }
 
+    .desktop {
+        display: none;
+    }
+
+    /************* Form Style ************/
+    form {
+        max-width: 100%;
+    }
+
+    form input.half {
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+    }
+
     .formGroup {
         min-width: 45px;
         display: inline-block;
     }
 
+    .formContainer h1 {
+        display: none;
+    }
+
+    /************ hidden styles ***********/
     .hidden {
         display: unset;
     }
@@ -421,42 +431,18 @@ label#consentbox-error {
         display: block;
     }
 
+    /************** Text Styles **********/
     .mainTitleText {
         display: none;
-    }
-
-    .row.mid {
-        flex-direction: column-reverse;
     }
 
     .mobileTitleText {
         display: block;
     }
 
-    .desktop {
-        display: none;
-    }
-
+    /********** Column Styles **********/
     .col-sm-12.col-md-9.mainText {
         margin: auto;
-    }
-
-
-    .mid p {
-        padding: 0;
-    }
-
-    .row.mid {
-        padding: 2%;
-    }
-
-    .row.mobileFormText.hidden {
-        text-align: center;
-        display: block;
-    }
-
-    .formContainer h1 {
-        display: none;
     }
 
     .col-md-6.col-4.hidden {
@@ -469,6 +455,7 @@ label#consentbox-error {
 
 }
 
+/************ Hide Skill Text on viewport change *********/
 @media screen and (max-width:286px) {
     p.navSkill {
         display: none !important;
