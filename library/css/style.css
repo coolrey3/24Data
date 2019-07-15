@@ -123,6 +123,12 @@ a.nav-link {
     color: white !important;
 }
 
+.navbar-dark .navbar-toggler-icon {
+    color: white;
+    background-image: url(https://i.ya-webdesign.com/images/hamburger-menu-icon-png-white-12.png);
+    background-size: 65px;
+}
+
 /**************** ROWS*****************/
 .row.top {
     padding-top: 60px;

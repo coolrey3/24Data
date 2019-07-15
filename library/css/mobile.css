@@ -40,6 +40,10 @@
         display: none;
     }
 
+    .logo {
+        max-width:40px; 
+    }
+
 
     .mid p {
         font-size: 1em;
