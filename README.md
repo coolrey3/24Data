@@ -1,21 +1,21 @@
 # 24Data Website Recreation
 
-# The Proccess
-This Project was intended as a skill test and the outline was to re-create this website from the images provided. I decided to start with the html and css and use bootstrap grid to start the general wireframe. After styling the page  for desktop i started with the mobile view. 
+## The Proccess
+This Project was intended as a skill test and the outline was to re-create this website from the images provided. I decided to start with the html and css and use bootstrap grid to start the general wireframe. After styling the page  for desktop i started with the mobile view. If the site was more feature rich in mobile, I would have considered designing for mobile first. 
 
  to add detail to the error messages output during form validation.
 
-# Tools Used
+## Tools Used
 
-### Node / Grunt
-### BootStrap 4 
-### JQuery - JQuery validation 
+#### Node / Grunt
+#### BootStrap 4 
+#### JQuery - JQuery validation 
 
 
-# Highlights
+## Highlights
 
-# Issues Encountered
+## Issues Encountered
 When doing the form validation i ran in to an issue using glyphicons and had to scrap the original method of form validation i was using. As glyphicons are no longer included in Bootstrap 4, the validation was not working as expected with the native rule validation in JQuery.
 
-# Next Steps
+## Next Steps
 
