@@ -15,10 +15,10 @@ I wrapped up my project by concatenating and minifying all my dev files and have
 
 ## Tools Used
 
-Node / Grunt
-BootStrap 4 
-JQuery - JQuery validation 
-iloveimg.com 
+##### -Node / Grunt
+##### -BootStrap 4 
+##### -JQuery - JQuery validation 
+##### -iloveimg.com 
 
 
 ## Highlights
