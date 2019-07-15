@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    // Toggle display of Skill Text in mobile
     document.getElementById('HamBurger').onclick = function () {
         if (document.getElementById('NavSkill').style.display == "none") {
 
@@ -10,28 +11,7 @@ $(document).ready(function () {
 
     };
 
-    $("#MainForm").on('submit', function (event) {
-        event.preventDefault(); // to prevent default page reloading
-        var dataString = $(this).serialize(); // to get the form data
-
-        $.ajax({
-            type: "POST",
-            // url: "form-to-email.php",
-            data: dataString,
-            success: function (data) {
-                $('#MainForm')[0].reset(); // to reset form data
-            }
-        }).done(function (data) {
-            setTimeout(function () {
-                alert("Form submitted successfully! We'll get back to you soon. Thank you.");
-            }, 2000);
-            //alert("Form submitted successfully! We'll get back to you soon. Thank you."); // This will be called after the ajax executed
-        });
-
-    });
-
-
-
+    // Validation Error Messages
     $('#MainForm').validate({
         rules: {
 
@@ -63,5 +43,13 @@ $(document).ready(function () {
                 required: 'Consent required!'
             }
         },
+    });
+
+    // Prevent Submit & Display Success
+    $("#MainForm").on('submit', function (event) {
+            event.preventDefault();
+            if ($('#CheckBox').is(':checked')) {
+                document.getElementById('FormAlert').innerHTML = "Form submitted successfully! We'll get back to you soon. Thank you";
+            }
     });
 });

@@ -21,10 +21,10 @@ I wrapped up my project by concatenating and minifying all my files and images a
 ##### -iloveimg.com 
 
 ## Highlights
-
+Ran in to interesting issues when trying to use glyphicons and bootstrap 4 in local environment
 
 ## Issues Encountered
 When doing the form validation I ran in to an issue using glyphicons and had to scrap the original method of form validation I was using. Also ran in to issues getting boostrap to display correctly on the tablet view at exactly 768 pixels. Resizes correctly below that.
 
 ## Next Steps
-If I were to hand the code off I would organize the Sass files to follow the SMACSS file structure and change the method used for displaying the Skills Test text when changing between viewport sizes.
+If I were to hand the code off I would organize the Sass files to follow the SMACSS file structure and change the method used for displaying the Skills Test text when changing between viewport sizes. I would also add more validation checks before the submission success message is displayed.
